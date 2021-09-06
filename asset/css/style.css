@@ -5,6 +5,7 @@
 }
 
 html{
+    scroll-behavior: smooth;
     font-family: helvetica, arial, sans-serif;
 }
 
@@ -13,6 +14,24 @@ html{
 2. kich thuoc
 3. mau sac
 4. kieu dang (kieu chu, hinh dang... */
+
+.pull-right{
+    float: right;
+}
+
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 15px;
+    border: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
 
 .clear{
     clear: both;
@@ -185,7 +204,7 @@ html{
 
 #content .content-section{
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 113px;
     margin: 0 auto;
 }
 
@@ -266,7 +285,6 @@ html{
 
 #content .place-list{
     margin-top: 32px;
-    margin-bottom: 48px;
 }
 
 #content .place-img{
@@ -301,18 +319,6 @@ html{
     line-height: 1.4;
 }
 
-#content .place-buy-btn{
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 15px;
-}
-
-#content .place-buy-btn:hover{
-    color: #000;
-    background-color: #ccc;
-}
-
 .contact-content{
     padding-top: 22px;
 }
@@ -341,24 +347,42 @@ html{
     border: 1px solid #ccc;
 }
 
-
-
-.contact-input .send-btn{
-    padding: 11px 17px;
-    margin: 16px 0;
-    color: #fff;
-    background-color: #000;
-    border: none;
-    float: right;
-}
-
 .contact-input .send-btn:hover{
     color: #000;
     background-color: #ccc;
 }
 
-#footer{
+.footer-img{
+    width: 100%;
+    filter: grayscale(50%);
+}
 
+#footer{
+    padding: 46px 16px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+#footer .footer-bottom-section{
+    display: inline-block;
+    font-size: 20px;
+}
+
+#footer .footer-bottom-section i[class*="ti-"]{
+    font-size: 20px;
+    margin: 0 -4px;
+    color: #474444;
+}
+
+#footer .footer-text a:hover,
+#footer .footer-bottom-section i[class*="ti-"]:hover{
+    opacity: 0.6;
+}
+
+#footer .footer-text a,
+#footer .footer-text{
+    margin-top: 15px;
+    color: #474444;
 }
 
 .modal{
