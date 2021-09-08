@@ -25,6 +25,8 @@ html{
     text-decoration: none;
     padding: 11px 15px;
     border: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover{
@@ -158,13 +160,27 @@ html{
     line-height: 38px;
 }
 
-#header .search-icon{
-    color: #fff;   
+#header .mobile-menu-btn{
+    display: none;
 }
 
+#header .mobile-menu-btn,
+#header .search-icon{
+    color: #fff;
+}
+
+#header .mobile-menu-btn,
 #header .search-button{
     float: right;
     padding: 13.5px 23px;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color:#000;
 }
 
 #header .search-button:hover{
@@ -204,8 +220,11 @@ html{
 
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 113px;
     margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{
@@ -234,6 +253,7 @@ html{
     margin-top: 48px;
     display: inline-block;
     width: 800px;
+    max-width: 100%;
 }
 
 #content .member .member-img{
@@ -284,7 +304,7 @@ html{
 }
 
 #content .place-list{
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 #content .place-img{
@@ -330,6 +350,10 @@ html{
 .contact-info{
     font-size: 18px;
     line-height: 1.5;
+}
+
+.contact-info a:hover{
+    opacity: 0.6;
 }
 
 .contact-info i[class*="ti-"]{
@@ -385,6 +409,7 @@ html{
     color: #474444;
 }
 
+/* Modal section */
 .modal{
     position: fixed;
     top: 0;
@@ -489,6 +514,7 @@ html{
 .modal-footer a{
     color: #2196F3;
 }
+
 
 @keyframes modalFaceIn{
     from {

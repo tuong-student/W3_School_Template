@@ -1,0 +1,106 @@
+@media(min-width: 740px) and (max-width: 1023px){
+   
+}
+
+/* Tablet && mobile devices*/
+@media(max-width: 1023px){
+    .btn{
+        padding: 16px 18px;
+    }
+
+    .form-control{
+        padding: 15px;
+    }
+
+    #footer .footer-bottom-section i[class*="ti-"]{
+        font-size: 36px;
+        padding-right: 25px;
+    }
+
+    #footer .footer-text
+    #footer .footer-text a{
+        padding: 13px 0;
+    }
+
+    #nav .subnav a{
+        padding: 16px 12px;
+    }
+
+    .contact-info{
+        line-height: 2;
+    }
+}
+
+/* Mobile resposinve */
+@media (max-width:740px){
+    .s-mt-8{
+        margin-top: 8px;
+    }
+
+    #nav{
+        display: block;
+    }
+
+    #nav > li{
+        display: block;
+    }
+
+    #nav > li:first-child{
+        display: inline-block;
+    }
+
+    #nav li a{
+        display: block;
+        padding: 1px 24px;
+    }
+
+    #nav .subnav{
+        position: initial; 
+        background-color: #333;
+    }
+
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 40px;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+
+    #header .search-button{
+        display: none;
+    }
+
+    #header .mobile-menu-btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+
+    #content .member{
+        margin-top: 18px;
+    }
+
+    #content .mobile-member{
+        width: 100%;
+    }
+    
+    #content .member .member-img{
+        width: 60%;
+    }
+
+    .s-full-width,
+    .s-col-full{
+        width: 100%;
+    }
+
+    #content .member-name{
+        margin-top: 30px;
+    }
+
+    .contact-content .contact-info{
+        margin-bottom: 32px;
+    }
+}
